@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallet Ti Hi Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <form id="calculatorForm">
+
+        <div class="header">
+            <h3>PALLET Ti Hi CALCULATOR</h3>
+        </div>
+        
+        <div class="header2">
+            <h5>BOX</h5>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="boxWidth">WIDTH (in):</label>
+                <input type="number" id="boxWidth" required>
+            </div>
+            <div class="form-group">
+                <label for="boxLength">LENGTH (in):</label>
+                <input type="number" id="boxLength" required>
+            </div>
+            <div class="form-group">
+                <label for="boxHeight">HEIGHT (in):</label>
+                <input type="number" id="boxHeight" required>
+            </div>
+        </div>
+
+        <div class="header2">
+            <h5>PALLET</h5>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="palletWidth">WIDTH (in):</label>
+                <input type="number" id="palletWidth" required>
+            </div>
+            <div class="form-group">
+                <label for="palletLength">LENGTH (in):</label>
+                <input type="number" id="palletLength" required>
+            </div>
+            <div class="form-group">
+                <label for="palletHeightLimit">HEIGHT LIMIT (in):</label>
+                <input type="number" id="palletHeightLimit" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="actions">
+                <button type="button" onclick="calculateTIHI()">Calculate Ti Hi</button>
+                <button class="clearbtn" type="button" onclick="clearForm()">Clear</button>
+            </div>
+        </div>
+
+    </form>
+    
+    <div>
+        <div class="header3">
+            <h4>BEST ORIENTATION</h4>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
+
