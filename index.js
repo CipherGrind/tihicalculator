@@ -34,7 +34,7 @@ function calculateTIHI() {
         }
     });
 
-    document.getElementById('result').innerHTML = `Ti [Boxes per Layer] : ${bestTI}<br>Hi [Number of Layers] : ${bestHI}<br>Total Boxes : ${maxBoxes}`;
+    document.getElementById('result').innerHTML = `BOXES PER LAYER | Ti = ${bestTI}<br>NUMBER OF LAYERS | Hi = ${bestHI}<br>TOTAL BOXES = ${maxBoxes}`;
 }
 
 

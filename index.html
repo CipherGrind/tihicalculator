@@ -14,48 +14,51 @@
     <form id="calculatorForm">
 
         <div class="header">
-            <h3>PALLET Ti Hi CALCULATOR</h3>
+            <h2>PALLET Ti Hi</h2>
+            <h5>CALCULATOR</h5>
         </div>
         
         <div class="header2">
-            <h5>BOX</h5>
+            <h3>BOX</h3>
+            <h6>ENTER IN INCHES</h6>
         </div>
 
-        <div class="form-row">
+        <div class="form-row1">
             <div class="form-group">
-                <label for="boxWidth">WIDTH (in):</label>
-                <input type="number" id="boxWidth" required>
+                <label for="boxWidth">WIDTH</label>
+                <input type="number" id="boxWidth" placeholder="width" required>
             </div>
             <div class="form-group">
-                <label for="boxLength">LENGTH (in):</label>
-                <input type="number" id="boxLength" required>
+                <label for="boxLength">LENGTH</label>
+                <input type="number" id="boxLength" placeholder="length" required>
             </div>
             <div class="form-group">
-                <label for="boxHeight">HEIGHT (in):</label>
-                <input type="number" id="boxHeight" required>
-            </div>
-        </div>
-
-        <div class="header2">
-            <h5>PALLET</h5>
-        </div>
-
-        <div class="form-row">
-            <div class="form-group">
-                <label for="palletWidth">WIDTH (in):</label>
-                <input type="number" id="palletWidth" required>
-            </div>
-            <div class="form-group">
-                <label for="palletLength">LENGTH (in):</label>
-                <input type="number" id="palletLength" required>
-            </div>
-            <div class="form-group">
-                <label for="palletHeightLimit">HEIGHT LIMIT (in):</label>
-                <input type="number" id="palletHeightLimit" required>
+                <label for="boxHeight">HEIGHT</label>
+                <input type="number" id="boxHeight"  placeholder="height" required>
             </div>
         </div>
 
-        <div class="form-row">
+        <div class="header2b">
+            <h3>PALLET</h3>
+            <h6>ENTER IN INCHES</h6>
+        </div>
+
+        <div class="form-row2">
+            <div class="form-group">
+                <label for="palletWidth">WIDTH</label>
+                <input type="number" id="palletWidth" placeholder="width" required>
+            </div>
+            <div class="form-group">
+                <label for="palletLength">LENGTH</label>
+                <input type="number" id="palletLength" placeholder="length" required>
+            </div>
+            <div class="form-group">
+                <label for="palletHeightLimit">HEIGHT LIMIT</label>
+                <input type="number" id="palletHeightLimit" placeholder="height limit" required>
+            </div>
+        </div>
+
+        <div class="form-row3">
             <div class="actions">
                 <button type="button" onclick="calculateTIHI()">Calculate Ti Hi</button>
                 <button class="clearbtn" type="button" onclick="clearForm()">Clear</button>
@@ -66,7 +69,7 @@
     
     <div>
         <div class="header3">
-            <h4>BEST ORIENTATION</h4>
+            <h3>BEST ORIENTATION</h3>
         </div>
         <div id="result" class="result"></div>
     </div>
